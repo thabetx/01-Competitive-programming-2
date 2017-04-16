@@ -23,6 +23,7 @@ int main() {
     v.resize(n);
     for(int i=0; i<n; i++) cin>>v[i];
     int l=0, r=1000000000;
+    // binary search for the minimum viable jump
     while(l<r){
       int m = l + (r-l)/2;
       if(check(m)) r=m;
